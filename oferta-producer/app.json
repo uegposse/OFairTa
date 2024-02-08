@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "producer-app",
+    "slug": "OfairTa Business",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#075E55"
+    },
+    "icon": "./assets/icon.png",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#075E55"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-image-picker"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "93cb1396-c663-4fc2-b9d6-b0676bf8057d"
+      }
+    }
+  }
+}

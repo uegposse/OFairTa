@@ -1,0 +1,121 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Definition of the 'User' table
+model User {
+  id               String            @id @default(uuid())
+  name             String
+  email            String            @unique
+  password         String
+  cpf              String            @unique
+  stores           Store[] // Relationship with 'Store' table
+  sales_as_seller  Sale[]            @relation("seller")
+  sales_as_buyer   Sale[]            @relation("buyer")
+  accessLevels     AccessLevel[]
+  userAccessLevels UserAccessLevel[]
+  address          Address[]
+  image            String?
+  historiy         String            @default("Ainda possui nenhuma historia cadastrada")
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @default(now()) @updatedAt
+}
+
+model Address {
+  id           String   @id @default(uuid())
+  street       String
+  CEP          String
+  city         String
+  state        String
+  neighborhood String
+  User         User?    @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  userId       String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @default(now()) @updatedAt
+}
+
+// Definition of the 'AccessLevel' table
+model AccessLevel {
+  id               String            @id @default(uuid())
+  name             String            @unique
+  users            User[]
+  userAccessLevels UserAccessLevel[]
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @default(now()) @updatedAt
+}
+
+// Definition of the 'UserAccessLevel' table (associative table)
+model UserAccessLevel {
+  id            String      @id @default(uuid())
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  accessLevel   AccessLevel @relation(fields: [accessLevelId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  userId        String
+  accessLevelId String
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @default(now()) @updatedAt
+}
+
+// Definition of the 'Store' table
+model Store {
+  id          String    @id @default(uuid())
+  name        String
+  storeImage  String?
+  description String
+  products    Product[]
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  createdAt   DateTime  @default(now())
+  uupdatedAt  DateTime  @default(now()) @updatedAt
+}
+
+// Definition of the 'Product' table
+model Product {
+  id          String        @id @default(uuid())
+  name        String
+  description String
+  price       Float
+  quantity    Int
+  image       String?
+  sales       SaleProduct[]
+  store       Store?        @relation(fields: [storeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  storeId     String?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @default(now()) @updatedAt
+}
+
+// Definition of the 'Sale' table
+model Sale {
+  id           String        @id @default(uuid())
+  total_value  Float
+  date         DateTime
+  seller       User          @relation("seller", fields: [sellerId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  buyer        User          @relation("buyer", fields: [buyerId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  sellerId     String
+  buyerId      String
+  saleProducts SaleProduct[]
+  status       StateSale     @default(OPEN)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @default(now()) @updatedAt
+}
+
+// Definition of the 'SaleProduct' table (associative table)
+model SaleProduct {
+  id        String   @id @default(uuid())
+  quantity  Int
+  sale      Sale     @relation(fields: [saleId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  saleId    String
+  productId String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+enum StateSale {
+  OPEN
+  CLOSED
+}
