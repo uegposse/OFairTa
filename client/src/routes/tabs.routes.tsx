@@ -75,7 +75,7 @@ export function TabRoutes() {
               ),
             }}
           />
-          <Screen
+          {/* <Screen
             name="Notifications"
             component={Notifications}
             options={{
@@ -83,7 +83,7 @@ export function TabRoutes() {
                 <BellRinging color={color} size={30} weight="fill" />
               ),
             }}
-          />
+          /> */}
         </>
       )}
 

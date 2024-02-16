@@ -18,7 +18,7 @@ import { api } from "../../services/api";
 import { checkInternetConnection } from "../../utils/netInfo";
 import { styles } from "./styles";
 
-interface saleProps {
+interface SaleProps {
   id: string;
   quantity: number;
 }
@@ -40,7 +40,7 @@ export function BuyFinalized() {
     };
   });
 
-  let sale: saleProps[] = [];
+  let sale: SaleProps[] = [];
 
   sale = cart.products.map((product) => {
     return {
@@ -68,20 +68,27 @@ export function BuyFinalized() {
     });
   }
 
+  // Função para remover chaves, colchetes e aspas da string
+  const cleanString = (str: string) => {
+    return str.replace(/[\{\}\[\]\""]/g, "");
+  };
+
   const requestBody = {
-    products: JSON.stringify(products, null, 3),
+    products: cleanString(JSON.stringify(products, null, 3)),
   };
 
   function handleLinkToWhatsapp() {
     Linking.openURL(
-      `whatsapp://send?text=Olá! Desejo comprar esses produtos!
-        ${requestBody.products}
-        total da compra: *${getCartTotal().toFixed(2)}*
-      &phone=+5562998256593`
+      `whatsapp://send?text=Olá! Desejo comprar esses produtos!\n${cleanString(
+        requestBody.products
+      )}\ntotal da compra: *${getCartTotal().toFixed(
+        2
+      )}*\n&phone=+5562998256593`
     );
     removeAllFromCart();
     navigate("Home");
   }
+
   return (
     <View>
       <HeaderReturn title="Início" />

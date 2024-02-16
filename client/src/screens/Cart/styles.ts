@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
     padding: 10,
     alignItems: "center",
     backgroundColor: "#3eb091",
+    marginBottom: 15,
   },
   cartHeaderText: {
     color: "#fff",
@@ -51,7 +52,7 @@ export const styles = StyleSheet.create({
   },
 
   cartScrollView: {
-    height: "45%",
+    height: "60%",
   },
   cartProduct: {
     padding: 15,

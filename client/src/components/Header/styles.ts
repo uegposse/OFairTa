@@ -25,6 +25,13 @@ export const styles = StyleSheet.create({
     backgroundColor: "#3eb091",
     padding: 7,
     borderRadius: 7,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  headerInputGroupText: {
+    color: "#FFFFFF",
+    fontWeight: "700",
+    fontSize: 20,
   },
   headerInputGroupIcons: {
     flexDirection: "row",

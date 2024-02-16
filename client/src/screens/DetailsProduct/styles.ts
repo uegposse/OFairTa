@@ -52,8 +52,8 @@ export const styles = StyleSheet.create({
   },
   footerText: {
     color: "#019972",
-    fontWeight: "500",
-    fontSize: 15,
+    fontWeight: "700",
+    fontSize: 20,
   },
   footerButton: {
     height: 40,

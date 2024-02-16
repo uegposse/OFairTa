@@ -25,6 +25,14 @@ export function Cart() {
   const { navigate, goBack } = useNavigation();
   const { cart, removeFromCart, getCartTotal } = useContext(CartContext);
 
+  // Função para formatar o preço como moeda real (BRL)
+  const formatPrice = (value: number) => {
+    return value.toLocaleString("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    });
+  };
+
   function handleBuy() {
     if (cart.products.length === 0) {
       Alert.alert("Aviso", "Não existem itens no carrinho para compra!");
@@ -43,11 +51,11 @@ export function Cart() {
         <View style={[styles.cartHeaderValueTotal]}>
           <Text style={styles.cartHeaderText}>Valor total:</Text>
           <Text style={styles.cartHeaderText}>
-            R$ {getCartTotal().toFixed(2)}
+            {formatPrice(getCartTotal())}
           </Text>
         </View>
       </View>
-      <Text style={styles.cartAddressesTitle}>Entregar em:</Text>
+      {/* <Text style={styles.cartAddressesTitle}>Entregar em:</Text>
       <View style={styles.cartAddress}>
         <MapPin color="#019972" size={32} weight="thin" />
         <View style={styles.cartAddressContent}>
@@ -56,7 +64,7 @@ export function Cart() {
             Rua Santa Lucia, Quadra 06, Lote 17. Santa Luzia.
           </Text>
         </View>
-      </View>
+      </View> */}
       <ScrollView
         style={styles.cartScrollView}
         showsVerticalScrollIndicator={false}
@@ -79,7 +87,7 @@ export function Cart() {
                 <View style={styles.cartProductTextInfo}>
                   <Text style={styles.cartProductText}>{product.name}</Text>
                   <Text style={styles.cartProductText}>
-                    R$ {product.price * product.quantity}
+                    {formatPrice(product.price * product.quantity)}
                   </Text>
                 </View>
 

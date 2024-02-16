@@ -95,7 +95,7 @@ export function Settings() {
               </View>
               <CaretRight color="#019972" size={32} weight="thin" />
             </TouchableOpacity>
-            <TouchableOpacity
+            {/* <TouchableOpacity
               onPress={() => navigate("ResetPassword")}
               style={styles.settingContainerOptionsGroup}
             >
@@ -104,8 +104,8 @@ export function Settings() {
                 <Text style={styles.settingOptionsText}>Alterar senha</Text>
               </View>
               <CaretRight color="#019972" size={32} weight="thin" />
-            </TouchableOpacity>
-            <TouchableOpacity
+            </TouchableOpacity> */}
+            {/* <TouchableOpacity
               onPress={() => navigate("DeactivateAccount")}
               style={styles.settingContainerOptionsGroup}
             >
@@ -114,7 +114,7 @@ export function Settings() {
                 <Text style={styles.settingOptionsText}>Desativar conta</Text>
               </View>
               <CaretRight color="#019972" size={32} weight="thin" />
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </View>
         </View>
         <Text
@@ -168,7 +168,7 @@ export function Settings() {
         </View>
       </ScrollView>
       <ModalApp
-        title="Sobre o OFairtTa"
+        title="Sobre o OFairtTa 1"
         isVisible={isModalVisible}
         onClose={() => setIsModalVisible(false)}
         backgroundColor="#DFEDE9"

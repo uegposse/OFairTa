@@ -1,6 +1,5 @@
 import React from "react";
-import { Image, Text, View } from "react-native";
-import { ScrollView } from "react-native-gesture-handler";
+import { Image, ScrollView, Text, View } from "react-native";
 import { HeaderReturn } from "../../components/HeaderReturn";
 
 export function ProducerHistory() {

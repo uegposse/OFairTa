@@ -1,6 +1,6 @@
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { MinusCircle, PlusCircle } from "phosphor-react-native";
-import { useContext, useEffect, useState } from "react";
 import {
   ActivityIndicator,
   Alert,
@@ -23,7 +23,7 @@ interface RouteParams {
 
 interface DetailsProductProps extends RouteParams {
   name: string;
-  image: string;
+  image: string | null;
   price: number;
   store: {
     userId: string;
@@ -31,9 +31,7 @@ interface DetailsProductProps extends RouteParams {
 }
 
 export function DetailsProduct() {
-  const [product, setProduct] = useState<DetailsProductProps>(
-    {} as DetailsProductProps
-  );
+  const [product, setProduct] = useState<DetailsProductProps | null>(null);
   const [counterProduct, setCounterProduct] = useState(1);
   const route = useRoute();
   const { id } = route.params as RouteParams;
@@ -60,22 +58,30 @@ export function DetailsProduct() {
   const handleAddCartProduct = () => {
     addToCart({
       id,
-      image: product.image,
-      name: product.name,
-      price: product.price,
+      image: product?.image ?? LogoImg,
+      name: product?.name ?? "",
+      price: product?.price ?? 0,
       quantity: counterProduct,
-      userId: product.store.userId,
+      userId: product?.store.userId ?? "",
     });
     navigate("Cart");
   };
 
   function handleRemoveCounterProduct() {
-    if (counterProduct === 1) {
-      setCounterProduct(1);
-    } else {
-      setCounterProduct(counterProduct - 1);
-    }
+    setCounterProduct((prevCounter) => Math.max(prevCounter - 1, 1));
   }
+
+  const handleIncrementCounterProduct = () => {
+    setCounterProduct((prevCounter) => prevCounter + 1);
+  };
+
+  // Função para converter o preço para moeda real (BRL)
+  const formatPrice = (value: number) => {
+    return value.toLocaleString("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    });
+  };
 
   return (
     <View>
@@ -83,64 +89,42 @@ export function DetailsProduct() {
       {loading && (
         <ActivityIndicator style={styles.loading} size={50} color="#019972" />
       )}
-      {!loading && (
-        <>
-          {product && (
-            <View style={styles.container}>
-              <TouchableOpacity
-                style={{
-                  marginBottom: 30,
-                  alignItems: "center",
-                  gap: 2,
-                }}
-                onPress={() => navigate("ProduceHistory")}
-              >
-                <Image style={styles.image} source={LogoImg} />
-                <Text
-                  style={{
-                    color: "#019972",
-                    fontWeight: "400",
-                  }}
-                >
-                  Clique para ver mais detalhes do produtor
-                </Text>
-              </TouchableOpacity>
-              <View style={styles.product}>
-                <Image
-                  style={styles.productImage}
-                  source={
-                    product.image === null ? LogoImg : { uri: product.image }
-                  }
-                />
-                <Text style={styles.productTitle}>{product.name}</Text>
-              </View>
+      {!loading && product && (
+        <View style={styles.container}>
+          <TouchableOpacity
+            style={styles.image}
+            onPress={() => navigate("ProduceHistory")}
+          >
+            <Image style={styles.image} source={LogoImg} />
+          </TouchableOpacity>
+          <View style={styles.product}>
+            <Image
+              style={styles.productImage}
+              source={product.image === null ? LogoImg : { uri: product.image }}
+            />
+            <Text style={styles.productTitle}>{product.name}</Text>
+          </View>
 
-              <View style={styles.cartProductButtons}>
-                <TouchableOpacity onPress={handleRemoveCounterProduct}>
-                  <MinusCircle color="#019972" size={60} weight="duotone" />
-                </TouchableOpacity>
-                <Text style={styles.cartProductButtonsText}>
-                  {counterProduct}
-                </Text>
+          <View style={styles.cartProductButtons}>
+            <TouchableOpacity onPress={handleRemoveCounterProduct}>
+              <MinusCircle color="#019972" size={60} weight="duotone" />
+            </TouchableOpacity>
+            <Text style={styles.cartProductButtonsText}>{counterProduct}</Text>
+            <TouchableOpacity onPress={handleIncrementCounterProduct}>
+              <PlusCircle color="#019972" size={60} weight="duotone" />
+            </TouchableOpacity>
+          </View>
 
-                <TouchableOpacity
-                  onPress={() => setCounterProduct(counterProduct + 1)}
-                >
-                  <PlusCircle color="#019972" size={60} weight="duotone" />
-                </TouchableOpacity>
-              </View>
-              <View style={styles.footer}>
-                <Text style={styles.footerText}>Valor: R$ {product.price}</Text>
-                <TouchableOpacity
-                  onPress={handleAddCartProduct}
-                  style={styles.footerButton}
-                >
-                  <Text style={styles.footerButtonText}>Add no carrinho</Text>
-                </TouchableOpacity>
-              </View>
-            </View>
-          )}
-        </>
+          <View style={styles.footer}>
+            <Text style={styles.footerText}>{formatPrice(product.price)}</Text>
+            <TouchableOpacity
+              onPress={handleAddCartProduct}
+              style={styles.footerButton}
+            >
+              <Text style={styles.footerButtonText}>Add no carrinho</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
       )}
     </View>
   );
