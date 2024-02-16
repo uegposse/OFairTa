@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "OFairTa",
+    "slug": "OFairTa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#019972"
+    },
+    "icon": "./assets/icon.png",
+    "assetBundlePatterns": ["**/*"],
+    "packagerOpts": {
+      "config": "metro.config.js"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#019972"
+      },
+      "package": "com.rodrigo322.OFairTa"
+    },
+    "ios": {
+      "bundleIdentifier": "com.rodrigo322.OFairTa"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d54050f0-56fa-4d68-99a6-7e227f342867"
+      }
+    }
+  }
+}
