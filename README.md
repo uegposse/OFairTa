@@ -33,20 +33,20 @@ O aplicativo será disponibilizado na loja virtual de aplicativos Google Play ap
 ## ⚙️ Telas app client
 
 <p align="center">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/1.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/2.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/3.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/4.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/5.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/6.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/7.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/8.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/9.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/10.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/11.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/12.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/13.jpeg" width="200px">
-  <img alt="app mobile" title="OFairTa" src="./assets/screens/14.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/1.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/2.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/3.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/4.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/5.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/6.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/7.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/8.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/9.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/10.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/11.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/12.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/13.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/14.jpeg" width="200px">
 </p>
 
 ## 🛠 Tecnologias
