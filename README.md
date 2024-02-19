@@ -47,6 +47,47 @@ O aplicativo será disponibilizado na loja virtual de aplicativos Google Play ap
   <img alt="app mobile" title="OFairTa" src="./assets/12.jpeg" width="200px">
   <img alt="app mobile" title="OFairTa" src="./assets/13.jpeg" width="200px">
   <img alt="app mobile" title="OFairTa" src="./assets/14.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/15.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/16.jpeg" width="200px">
+</p>
+
+## ⚙️ Funcionalidades app produtor
+
+- [x] Cadastro de Usuário
+- [x] Alteração de dados do Usuário
+- [x] Aunteticação de usuarios com e-mail e senha
+- [x] Cadastro de bancas
+- [x] Alterar dados da banca
+- [x] Excluir excluir bancas
+- [x] Cadastro dos produtos
+- [x] Alterar dados dos produtos
+- [x] Excluir produtos
+- [x] Listagem de todas as bancas
+- [x] Listagem de produtos por banca
+- [x] Detalhes do produto
+- [x] Informações gerais do OfairTa
+- [x] Listagem de todos os pedidos
+- [x] Aprovação de cada pedido
+- [x] Analise dos dados do pedido
+- [x] Cadastro do endereço do produtor
+- [x] Alteração do endereço do produtor
+
+## ⚙️ Telas app client
+
+<p align="center">
+  
+  <img alt="app mobile" title="OFairTa" src="./assets/17.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/18.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/19.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/20.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/21.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/22.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/23.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/24.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/25.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/26.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/27.jpeg" width="200px">
+  <img alt="app mobile" title="OFairTa" src="./assets/28.jpeg" width="200px">
 </p>
 
 ## 🛠 Tecnologias
