@@ -131,7 +131,7 @@ $ npm install ou yarn
 # Execute a aplicação em modo de desenvolvimento
 $ npx expo start
 
-# Logo em seguida instale o aplicativo Expo GO em abra o app para executar o app cliente em modo de desenvolvimento
+# Instale o aplicativo Expo GO e scanneie o QRCode no terminal
 ```
 
 #### 🎲 Rodando o App Produtor (Mobile)
@@ -149,7 +149,7 @@ $ npm install ou yarn
 # Execute a aplicação em modo de desenvolvimento
 $ npx expo start
 
-# Logo em seguida instale o aplicativo Expo GO em abra o app para executar o app cliente em modo de desenvolvimento
+# Instale o aplicativo Expo GO e scanneie o QRCode no terminal
 ```
 
 ---
