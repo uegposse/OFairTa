@@ -16,7 +16,7 @@ O aplicativo será disponibilizado na loja virtual de aplicativos Google Play ap
 
 ---
 
-## ⚙️ Funcionalidades app client
+## ⚙️ Funcionalidades App Cliente
 
 - [x] Cadastro de Usuário
 - [x] Alteração de dados do Usuário
@@ -30,7 +30,7 @@ O aplicativo será disponibilizado na loja virtual de aplicativos Google Play ap
 - [x] Cadastro do endereço do cliente
 - [x] Alteração do endereço do cliente
 
-## ⚙️ Telas app client
+## ⚙️ Telas App Cliente
 
 <p align="center">
   <img alt="app mobile" title="OFairTa" src="./assets/1.jpeg" width="200px">
@@ -51,7 +51,7 @@ O aplicativo será disponibilizado na loja virtual de aplicativos Google Play ap
   <img alt="app mobile" title="OFairTa" src="./assets/16.jpeg" width="200px">
 </p>
 
-## ⚙️ Funcionalidades app produtor
+## ⚙️ Funcionalidades App Produtor
 
 - [x] Cadastro de Usuário
 - [x] Alteração de dados do Usuário
@@ -72,7 +72,7 @@ O aplicativo será disponibilizado na loja virtual de aplicativos Google Play ap
 - [x] Cadastro do endereço do produtor
 - [x] Alteração do endereço do produtor
 
-## ⚙️ Telas app client
+## ⚙️ Telas App Produtor
 
 <p align="center">
   
@@ -89,6 +89,70 @@ O aplicativo será disponibilizado na loja virtual de aplicativos Google Play ap
   <img alt="app mobile" title="OFairTa" src="./assets/27.jpeg" width="200px">
   <img alt="app mobile" title="OFairTa" src="./assets/28.jpeg" width="200px">
 </p>
+
+## 🚀 Como executar o projeto
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+#### 🎲 Rodando o Backend (servidor)
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/uegposse/OFairTa
+
+# Vá para a pasta backend
+$ cd OFairTa/banckend
+
+# Instale as dependências
+$ npm install ou yarn
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev ou yarn dev
+
+# O servidor inciará na porta:3333 - acesse http://localhost:3333
+```
+
+#### 🎲 Rodando o App Cliente (Mobile)
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/uegposse/OFairTa
+
+# Vá para a pasta backend
+$ cd OFairTa/client
+
+# Instale as dependências
+$ npm install ou yarn
+
+# Execute a aplicação em modo de desenvolvimento
+$ npx expo start
+
+# Logo em seguida instale o aplicativo Expo GO em abra o app para executar o app cliente em modo de desenvolvimento
+```
+
+#### 🎲 Rodando o App Produtor (Mobile)
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/uegposse/OFairTa
+
+# Vá para a pasta backend
+$ cd OFairTa/producer
+
+# Instale as dependências
+$ npm install ou yarn
+
+# Execute a aplicação em modo de desenvolvimento
+$ npx expo start
+
+# Logo em seguida instale o aplicativo Expo GO em abra o app para executar o app cliente em modo de desenvolvimento
+```
+
+---
 
 ## 🛠 Tecnologias
 
