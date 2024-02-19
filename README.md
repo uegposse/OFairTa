@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-    O OFairTa tem por objetivo proporcionar facilidade  na compra e venda de produtos oriundos dos pequenos produtores rurais da microrregião do Vão do Paranã.
+    O projeto OFairTa é uma iniciativa da Universidade Estadual de Goiás - Unidade Universitária de Posse juntamente com o Instituto Federal Goiano - campus Posse para fomentar o desenvolvimento sustentável do Cerrado. O aplicativo denominado OFairTa consiste em uma plataforma que releciona o produtor familiar que utiliza técnicas sustentáveis e possíveis clientes com interesse em consumir esses produtos. O aplicativo é desenvolvido por estudantes das duas instituições sob a orientação de professores da área de tecnologia da informação.
 </h3>
 
 <h4 align="center">
