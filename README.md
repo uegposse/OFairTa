@@ -1,9 +1,9 @@
 <h1 align="center">
-    <a href="#" alt="App ResolveAí"> Aplicativo OFairTa </a>
+    <a href="#" alt="App OFairTa"> Aplicativo OFairTa </a>
 </h1>
 
 <h3 align="center">
-    O projeto OFairTa é uma iniciativa da <a href="http://www.posse.ueg.br/">Universidade Estadual de Goiás (UEG) - Unidade Universitária de Posse</a> juntamente com o <a href="https://www.ifgoiano.edu.br/home/index.php/posse.html">Instituto Federal Goiano - campus Posse</a>, com financiamento do <a href="https://iabs.org.br/">Instituto Brasileiro de Desenvolvimento e Sustentabilidade (IABS)</a> para fomentar o desenvolvimento sustentável do Cerrado. O aplicativo denominado OFairTa consiste em uma plataforma que releciona o produtor familiar que utiliza técnicas sustentáveis e possíveis clientes com interesse em consumir esses produtos. O aplicativo é desenvolvido por estudantes das duas instituições sob a orientação de professores da área de tecnologia da informação.
+    O projeto OFairTa é uma iniciativa da <a href="http://www.posse.ueg.br/">Universidade Estadual de Goiás (UEG) - Unidade Universitária de Posse</a> juntamente com o <a href="https://www.ifgoiano.edu.br/home/index.php/posse.html">Instituto Federal Goiano - campus Posse</a>, com financiamento do <a href="https://iabs.org.br/">Instituto Brasileiro de Desenvolvimento e Sustentabilidade (IABS)</a>, para fomentar o desenvolvimento sustentável do Cerrado. O aplicativo denominado OFairTa consiste em uma plataforma que releciona o produtor familiar que utiliza técnicas sustentáveis e possíveis clientes com interesse em consumir esses produtos. O aplicativo é desenvolvido por estudantes das duas instituições sob a orientação de professores da área de tecnologia da informação.
 </h3>
 
 <h4 align="center">
