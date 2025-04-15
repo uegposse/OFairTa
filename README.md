@@ -14,7 +14,7 @@
 
 O aplicativo será disponibilizado na loja virtual de aplicativos Google Play app store de forma gratuita e será alimentado com dados de pequenos produtores da região alvo através de um banco de dados gerado pelo cadastro de produtores e produtos ofertados no próprio aplicativo.
 
-## ![book](https://github.com/user-attachments/assets/e70d4612-6096-48e9-b68b-4808a1503079) Manual básico
+##  ![book](https://github.com/user-attachments/assets/225f4cbb-91c7-4097-a887-2919812e6962) Manual básico
 
 Acesse o manual básico com a explicação das funcionalidades do aplicativo <a href="http://aprender.posse.ueg.br:8081/jspui/handle/123456789/346">aqui</a>. Veja também o <a href="https://www.youtube.com/watch?v=DIYFbpd_mgM">vídeo</a>. 
 
