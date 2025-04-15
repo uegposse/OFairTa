@@ -14,6 +14,10 @@
 
 O aplicativo será disponibilizado na loja virtual de aplicativos Google Play app store de forma gratuita e será alimentado com dados de pequenos produtores da região alvo através de um banco de dados gerado pelo cadastro de produtores e produtos ofertados no próprio aplicativo.
 
+## ![book](https://github.com/user-attachments/assets/e70d4612-6096-48e9-b68b-4808a1503079) Manual básico
+
+Acesse o manual básico com a explicação das funcionalidades do aplicativo <a href="http://aprender.posse.ueg.br:8081/jspui/handle/123456789/346">aqui</a>. Veja também o <a href="https://www.youtube.com/watch?v=DIYFbpd_mgM">vídeo</a>. 
+
 ---
 
 ## ⚙️ Funcionalidades App Cliente
@@ -98,14 +102,14 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-#### 🎲 Rodando o Backend (servidor)
+#### 🎲 Rodando o Back-end (servidor)
 
 ```bash
 # Clone este repositório
 $ git clone https://github.com/uegposse/OFairTa
 
-# Vá para a pasta backend
-$ cd OFairTa/banckend
+# Vá para a pasta back-end
+$ cd OFairTa/back-end
 
 # Instale as dependências
 $ npm install ou yarn
@@ -122,7 +126,7 @@ $ npm run dev ou yarn dev
 # Clone este repositório
 $ git clone https://github.com/uegposse/OFairTa
 
-# Vá para a pasta backend
+# Vá para a pasta back-end
 $ cd OFairTa/client
 
 # Instale as dependências
@@ -140,7 +144,7 @@ $ npx expo start
 # Clone este repositório
 $ git clone https://github.com/uegposse/OFairTa
 
-# Vá para a pasta backend
+# Vá para a pasta back-end
 $ cd OFairTa/producer
 
 # Instale as dependências
@@ -158,7 +162,7 @@ $ npx expo start
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### [](https://github.com/uegposse/OFairTa)**Backend** ([NodeJS](https://nodejs.org/en/))
+#### [](https://github.com/uegposse/OFairTa)**Back-end** ([NodeJS](https://nodejs.org/en/))
 
 - **[Express](https://expressjs.com/)**
 - **[Prisma](https://www.prisma.io)**
